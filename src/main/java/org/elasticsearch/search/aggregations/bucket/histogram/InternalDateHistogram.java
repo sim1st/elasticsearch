@@ -33,7 +33,7 @@ public class InternalDateHistogram {
 
     final static Type TYPE = new Type("date_histogram", "dhisto");
 
-    static class Bucket extends InternalHistogram.Bucket {
+    public static class Bucket extends InternalHistogram.Bucket {
 
         Bucket(boolean keyed, @Nullable ValueFormatter formatter, InternalHistogram.Factory<Bucket> factory) {
             super(keyed, formatter, factory);
